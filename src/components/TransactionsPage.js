@@ -1,5 +1,4 @@
 import React from 'react';
-import {Header, Footer, GenericStockPhoto} from './GenericStuff.js'
 
 class Transactions extends React.Component {
   constructor(props){
@@ -48,10 +47,7 @@ export class TransactionsPage extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <GenericStockPhoto />
         <TransactionsContent />
-        <Footer />
       </div>
     );
   }

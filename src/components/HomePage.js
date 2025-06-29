@@ -1,6 +1,4 @@
 import React from 'react';
-import {Header, Footer, GenericStockPhoto} from './GenericStuff.js'
-
 
 class BalancesHome extends React.Component {
   constructor(props) {
@@ -107,10 +105,7 @@ export class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <GenericStockPhoto />
         <HomeContent />
-        <Footer />
       </div>
     );
   }
