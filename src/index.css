@@ -18,7 +18,11 @@ code {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #EAEAE3
+  color: #EAEAE3;
+}
+
+.header-footer-bar h4 {
+  margin: 0 1rem;
 }
 
 .app {
@@ -48,19 +52,23 @@ h1, h2, h3, h4, h5 {
 }
 
 .header-footer-bar {
-  width: 100vw;
+  display: flex;
+  width: 100%;
   height: 3rem;
+  align-items: center;
   background-color: #090F14;
 }
 
 .footer {
+  color: #EAEAEA;
   display: flex;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .content-header-text {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
