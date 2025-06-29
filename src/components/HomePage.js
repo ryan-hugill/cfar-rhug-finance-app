@@ -74,13 +74,13 @@ class FinanceNewsHome extends React.Component {
   render() {
     return (
       <div className="finance-news-home">
-        <h1 className="content-header-text">Finance News</h1>
+        <h1 className="content-header-text">News</h1>
       </div>
     );
   }
 }
 
-class HomeContent extends React.Component {
+export class HomePage extends React.Component {
   constructor(props){
     super(props);
   }
@@ -93,19 +93,6 @@ class HomeContent extends React.Component {
         <SpendingChartHome />
         <NetWorthGraphHome />
         <FinanceNewsHome />
-      </div>
-    );
-  }
-}
-
-export class HomePage extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <HomeContent />
       </div>
     );
   }
