@@ -1,12 +1,14 @@
-import { HomePage } from './HomePage.js'
-import { TransactionsPage } from './TransactionsPage.js';
+import { HomePage } from './components/HomePage.js'
+import { TransactionsPage } from './components/TransactionsPage.js';
+import {Route, Routes} from "react-router";
 
 
 function App() {
   return (
-    <div className="app">
-      <TransactionsPage />
-    </div>
+    <Routes className="app">
+      <Route path="/" element={<HomePage />} />
+      <Route path="/spend" element={<TransactionsPage />} />
+    </Routes>
   );
 }
 

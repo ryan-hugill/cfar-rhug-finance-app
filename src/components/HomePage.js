@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import {Header, Footer, GenericStockPhoto} from './GenericStuff.js'
 
