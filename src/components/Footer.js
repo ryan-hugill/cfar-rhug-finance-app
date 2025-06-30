@@ -1,14 +1,9 @@
 import React from 'react';
 
-export class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render () {
+export function Footer() {
     return(
       <div className="footer header-footer-bar">
         <small>Copyright © 2025 Cody Farrey & Ryan Hugill</small>
       </div>
     );
-  }
 }

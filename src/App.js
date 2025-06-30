@@ -1,8 +1,8 @@
 import { HeroSection } from './components/HeroSection.js';
 import { Footer } from './components/Footer.js';
 import { Header } from './components/Header.js'
-import { HomePage } from './components/HomePage.js'
-import { TransactionsPage } from './components/TransactionsPage.js';
+import { HomePage } from './pages/HomePage.js'
+import { TransactionsPage } from './pages/TransactionsPage.js';
 import {Route, Routes} from "react-router";
 
 

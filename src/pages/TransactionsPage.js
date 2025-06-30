@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SpendAnalyzer } from '../components/SpendAnalyzer';
+
 class Transactions extends React.Component {
   constructor(props){
     super(props);
@@ -8,19 +10,6 @@ class Transactions extends React.Component {
     return (
         <div className="transactions">
             <h1 className="content-header-text">Transactions</h1>
-        </div>
-    );
-  }
-}
-
-class SpendAnalyzer extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (
-        <div className="spend-analyzer">
-            <h1 className="content-header-text">Spend Analyzer</h1>
         </div>
     );
   }
