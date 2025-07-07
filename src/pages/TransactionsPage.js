@@ -1,33 +1,7 @@
 import React from 'react';
 
 import { SpendAnalyzer } from '../components/SpendAnalyzer';
-
-class Transactions extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (
-        <div className="transactions">
-            <h1 className="content-header-text">Transactions</h1>
-        </div>
-    );
-  }
-}
-
-class TransactionsContent extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (
-      <div className="content-area-transactions">
-        <Transactions />
-        <SpendAnalyzer />
-      </div>
-    );
-  }
-}
+import { TransactionsCard } from '../components/TransactionsCard';
 
 export class TransactionsPage extends React.Component {
   constructor(props){
@@ -35,8 +9,9 @@ export class TransactionsPage extends React.Component {
   }
   render() {
     return (
-      <div>
-        <TransactionsContent />
+      <div className="content-area-transactions" link={false}>
+        <TransactionsCard className="transactions"/>
+        <SpendAnalyzer />
       </div>
     );
   }
