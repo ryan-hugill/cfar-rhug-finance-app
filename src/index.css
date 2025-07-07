@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5 {
   color: #EAEAE3;
 }
 
+a {
+  color: #EAEAE3;
+  text-decoration: none;
+}
+
 .header-footer-bar h4 {
   margin: 0 1rem;
 }
@@ -92,7 +97,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 10px;
 }
 
-.finance-news-home {
+.market-news-home {
   width: 720px;
   height: 281px;
   background-color: #090F14;
