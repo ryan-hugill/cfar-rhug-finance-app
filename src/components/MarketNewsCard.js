@@ -1,7 +1,9 @@
+import { Card } from './Card';
+
 export function MarketNewsCard(props){
   return (
-    <div className={props.className}>
+    <Card className={props.className}>
       <h1 className="content-header-text">News</h1>
-    </div>
+    </Card>
   );
 }
