@@ -1,14 +1,9 @@
-import React from 'react';
+import { Card } from './Card';
 
-export class BalancesCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div className={this.props.className}>
-        <h1 className="content-header-text">Account Balances</h1>
-      </div>
-    );
-  }
+export function BalancesCard(props) {
+  return (
+    <Card className={props.className}>
+      <h1 className="content-header-text">Account Balances</h1>
+    </Card>
+  );
 }

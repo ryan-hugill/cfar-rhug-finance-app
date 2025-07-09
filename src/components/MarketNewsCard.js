@@ -1,14 +1,9 @@
-import React from 'react';
+import { Card } from './Card';
 
-export class MarketNewsCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div className={this.props.className}>
-        <h1 className="content-header-text">News</h1>
-      </div>
-    );
-  }
+export function MarketNewsCard(props){
+  return (
+    <Card className={props.className}>
+      <h1 className="content-header-text">News</h1>
+    </Card>
+  );
 }
