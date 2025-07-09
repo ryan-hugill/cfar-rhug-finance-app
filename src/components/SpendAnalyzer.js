@@ -1,4 +1,3 @@
-
 export function SpendAnalyzer() {
     return (
         <div className="spend-analyzer">
