@@ -1,14 +1,9 @@
 import React from 'react';
 
-export class MarketNewsCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
+export function MarketNewsCard() {
     return (
-      <div className={this.props.className}>
+      <div className="market-news-home">
         <h1 className="content-header-text">News</h1>
       </div>
     );
-  }
 }

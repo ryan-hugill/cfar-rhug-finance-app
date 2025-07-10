@@ -1,9 +1,9 @@
 import { HeroSection } from './components/HeroSection.js';
 import { Footer } from './components/Footer.js';
 import { Header } from './components/Header.js'
-import { HomePage } from './pages/HomePage.js'
-import { TransactionsPage } from './pages/TransactionsPage.js';
-import {Route, Routes} from "react-router";
+import { Route, Routes } from "react-router";
+import { Spend } from './routes/Spend.js';
+import { Home } from './routes/Home.js';
 
 
 
@@ -13,8 +13,8 @@ function App() {
       <Header />
       <HeroSection />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/spend" element={<TransactionsPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/spend" element={<Spend />} />
         </Routes>
       <Footer />
     </div>
