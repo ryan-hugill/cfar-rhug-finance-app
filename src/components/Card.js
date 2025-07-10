@@ -1,5 +1,7 @@
-export function Card() {
+export function Card({as: Component = 'div', className = '', children, ...props}) {
     return(
-        <div className="card"></div>
+        <Component className={`card ${className}`} {...props}>
+            {children}
+        </Component>
     );
 }

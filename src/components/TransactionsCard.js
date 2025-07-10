@@ -1,11 +1,13 @@
 import { Link } from 'react-router';
+import { Card } from './Card';
 
-export function TransactionsCard() {
+export function TransactionsCard(props) {
+  const {className, link} = props;
   return (
-    <div className="transactions-home content-box-home">
+    <Card className={className}>
       <h1 className="content-header-text">
-        <Link to="/spend">Transactions</Link>
+        {link ? <Link to="/spend">Transactions</Link> : "Transactions"}
       </h1>
-    </div>
+    </Card>
   );
 }

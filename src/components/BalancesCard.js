@@ -1,9 +1,9 @@
-import React from 'react';
+import { Card } from './Card';
 
-export function BalancesCard() {
+export function BalancesCard(props) {
   return (
-    <div className="balances-home content-box-home">
+    <Card className={props.className}>
       <h1 className="content-header-text">Account Balances</h1>
-    </div>
+    </Card>
   );
 }
